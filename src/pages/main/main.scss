@@ -1,0 +1,25 @@
+/* App.css */
+.button {
+  width: 40vw;
+  height: 40vw;
+  transition: all 0.3s ease;
+}
+
+@keyframes grow {
+  0% {
+    width: 40vw;
+    height: 40vw;
+  }
+  50% {
+    width: 35vw;
+    height: 35vw;
+  }
+  100% {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+.animate {
+  animation: grow 0.3s forwards;
+}
