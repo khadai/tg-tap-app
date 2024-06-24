@@ -1,4 +1,4 @@
-import  {FC, useState} from "react";
+import {FC, useState} from "react";
 import {Avatar, Box, ButtonBase, Stack, Typography} from "@mui/material";
 import AchivIcon from '../../assets/robot.svg?react'
 import DollarIcon from '../../assets/dollar.svg?react'

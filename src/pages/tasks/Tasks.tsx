@@ -1,7 +1,5 @@
 import React, {FC, useState} from "react";
 import {Box, Tab, Tabs, Typography} from "@mui/material";
-import adImage from "../../assets/Любовь-к-автомобилям-шапка4 2.png";
-import RatingListItem from "../rating/components/RatingListItem.tsx";
 import {tasksMock} from "../../mock/mock-data.ts";
 import TaskListItem from "./components/TaskListItem.tsx";
 
@@ -49,7 +47,7 @@ const Tasks: FC<Props> = () => {
             </Box>
             <CustomTabPanel value={value} index={0}>
                 <Box sx={{p: 3}}>
-                    <Typography fontWeight={800} fontSize={30} color='common.white'>
+                    <Typography fontWeight={800} fontSize={25} color='common.white'>
                         Задания
                     </Typography>
                     <Typography fontWeight={600} fontSize={12} pt={3} color='common.white'>
@@ -63,7 +61,7 @@ const Tasks: FC<Props> = () => {
 
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-                <Typography fontWeight={800} fontSize={30} color='common.white'>
+                <Typography fontWeight={800} fontSize={25} color='common.white'>
                     Прокачка
                 </Typography>
                 <Typography fontWeight={600} fontSize={12} pt={3} color='common.white'>

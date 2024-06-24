@@ -1,11 +1,8 @@
 import {FC, useState} from "react";
-import {NumericFormat} from "react-number-format";
 import {Box, Typography} from "@mui/material";
 import {leaderBoardMock} from "../../mock/mock-data.ts";
-import backgroundImage from "../../assets/background.png";
 import adImage from '../../assets/Любовь-к-автомобилям-шапка4 2.png';
 import RatingListItem from "./components/RatingListItem.tsx";
-import {containerStyle} from "../../styles/styles.ts";
 
 interface Props {
 
@@ -16,7 +13,7 @@ const Rating: FC<Props> = () => {
 
     return (
         <Box textAlign='center' width='100%'>
-            <Typography fontWeight={800} fontSize={30} color='common.white'>
+            <Typography fontWeight={800} fontSize={25} color='common.white'>
                 Лидерборд
             </Typography>
             <Typography fontWeight={600} fontSize={12} pt={3} color='common.white'>

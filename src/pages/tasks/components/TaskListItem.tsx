@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {Task} from "../../../interfaces/interfaces.ts";
 import {containerStyle} from "../../../styles/styles.ts";
-import {Box, ButtonBase, Link, Typography, Avatar} from "@mui/material";
+import {Avatar, Box, ButtonBase, Link, Typography} from "@mui/material";
 import ArrowIcon from '../../../assets/double-arrow.svg?react'
 import {NumericFormat} from "react-number-format";
 import DollarIcon from '../../../assets/dollar.svg?react'

@@ -2,7 +2,7 @@ import {FC, useState} from "react";
 import {Box, ButtonBase, Stack, Typography} from "@mui/material";
 import {NumericFormat} from "react-number-format";
 import rocketImage from "../../assets/rocket.png";
-import {User, BoostAbility} from "../../interfaces/interfaces.ts";
+import {BoostAbility, User} from "../../interfaces/interfaces.ts";
 import {mockBoost, mockUser} from "../../mock/mock-data.ts";
 import DollarIcon from '../../assets/dollar.svg?react'
 import ZipperIcon from '../../assets/zipper.svg?react'

@@ -41,3 +41,16 @@ export interface Task {
     award: number;
     link: string
 }
+
+export interface InviteOffer {
+    title: string;
+    award: number;
+    description: string
+}
+
+export interface Friend {
+    id:string;
+    profilePhotoUrl: string;
+    username: string;
+    award: number;
+}

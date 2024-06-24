@@ -1,7 +1,4 @@
-import {
-    Box, Button,
-    Modal, Typography,
-} from "@mui/material";
+import {Box, Button, Modal, Typography,} from "@mui/material";
 import {BoostAbility} from "../../../interfaces/interfaces.ts";
 import DollarIcon from '../../../assets/dollar.svg?react';
 import {containerStyle} from "../../../styles/styles.ts";

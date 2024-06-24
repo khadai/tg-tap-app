@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {Stack, Typography, Box, ButtonBase} from "@mui/material";
+import {Box, ButtonBase, Stack, Typography} from "@mui/material";
 import {NumericFormat} from "react-number-format";
 import rocketImage from '../../../assets/rocket.png'
 import Arrow from '../../../assets/dashed-arrow.svg?react'

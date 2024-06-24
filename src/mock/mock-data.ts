@@ -1,4 +1,4 @@
-import {BoostAbility, LeaderBoard, LeaderBoardUser, Task, User} from "../interfaces/interfaces.ts";
+import {BoostAbility, Friend, LeaderBoard, LeaderBoardUser, Task, User} from "../interfaces/interfaces.ts";
 
 export const mockUser: User = {
     oneTapIncome: 350,
@@ -151,3 +151,68 @@ export const tasksMock: Task[] = [
         link: 'https://example.com/download-app'
     }
 ];
+
+
+export const friendsMock: Friend[] = [
+    {
+        id: 'friend1',
+        profilePhotoUrl: 'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzQtZWxlbWVudC0wNy00MDMucG5n.png',
+        username: 'Alice',
+        award: 5000,
+    },
+    {
+        id: 'friend2',
+        profilePhotoUrl: 'https://example.com/photo2.jpg',
+        username: 'Bob',
+        award: 5000,
+    },
+    {
+        id: 'friend3',
+        profilePhotoUrl: 'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzQtZWxlbWVudC0wNy00MDMucG5n.png',
+        username: 'Charlie',
+        award: 20000,
+    },
+    {
+        id: 'friend4',
+        profilePhotoUrl: 'https://example.com/photo4.jpg',
+        username: 'Dave',
+        award: 5000,
+    },
+    {
+        id: 'friend5',
+        profilePhotoUrl: 'https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA4L2pvYjEwMzQtZWxlbWVudC0wNy00MDMucG5n.png',
+        username: 'Eve',
+        award: 20000,
+    },
+    {
+        id: 'friend6',
+        profilePhotoUrl: 'https://example.com/photo6.jpg',
+        username: 'Frank',
+        award: 5000,
+    },
+    {
+        id: 'friend7',
+        profilePhotoUrl: 'https://example.com/photo7.jpg',
+        username: 'Grace',
+        award: 5000,
+    },
+    {
+        id: 'friend8',
+        profilePhotoUrl: 'https://example.com/photo8.jpg',
+        username: 'Hank',
+        award: 5000,
+    },
+    {
+        id: 'friend9',
+        profilePhotoUrl: 'https://example.com/photo9.jpg',
+        username: 'Ivy',
+        award: 20000,
+    },
+    {
+        id: 'friend10',
+        profilePhotoUrl: 'https://example.com/photo10.jpg',
+        username: 'Jack',
+        award: 20000,
+    }
+];
+
