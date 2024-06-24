@@ -33,3 +33,11 @@ export interface LeaderBoardUser {
     username: string;
     refAmount: number
 }
+
+export interface Task {
+    id: string;
+    imgUrl: string;
+    title: string;
+    award: number;
+    link: string
+}
