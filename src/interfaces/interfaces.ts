@@ -49,8 +49,22 @@ export interface InviteOffer {
 }
 
 export interface Friend {
-    id:string;
+    id: string;
     profilePhotoUrl: string;
     username: string;
     award: number;
 }
+
+export interface DailyAward {
+    isAvailable: boolean;
+    dailyStreak: number;
+    nextAwardTimestamp: number;
+    award: Award
+}
+
+export interface Award {
+    title: string;
+    imageUrl: string;
+    imageText: string;
+    description: string
+};

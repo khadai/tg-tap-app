@@ -1,4 +1,4 @@
-import {BoostAbility, Friend, LeaderBoard, LeaderBoardUser, Task, User} from "../interfaces/interfaces.ts";
+import {BoostAbility, DailyAward, Friend, LeaderBoard, LeaderBoardUser, Task, User} from "../interfaces/interfaces.ts";
 
 export const mockUser: User = {
     oneTapIncome: 350,
@@ -216,3 +216,14 @@ export const friendsMock: Friend[] = [
     }
 ];
 
+export const dailyAwardMock: DailyAward = {
+    isAvailable: false,
+    dailyStreak: 3,
+    nextAwardTimestamp: 1719280636792,
+    award: {
+        title: 'Поздравляем',
+        imageUrl: '/src/assets/treasure.png',
+        imageText: '10K',
+        description: 'Вы получили 10000 монет'
+    }
+}
