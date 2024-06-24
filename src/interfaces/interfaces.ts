@@ -20,3 +20,16 @@ export interface BoostAbility {
     level: number;
     description: string;
 }
+
+export interface LeaderBoard {
+    users: LeaderBoardUser[],
+    me: LeaderBoardUser,
+    adImgUrl: string
+}
+
+export interface LeaderBoardUser {
+    id: string;
+    position: number;
+    username: string;
+    refAmount: number
+}
