@@ -1,4 +1,4 @@
-import {User} from "../interfaces/interfaces.ts";
+import {BoostAbility, User} from "../interfaces/interfaces.ts";
 
 export const mockUser: User = {
     oneTapIncome: 350,
@@ -15,3 +15,19 @@ export const mockUser: User = {
         image: 'https://i.ytimg.com/vi/smNt0U4DUco/hqdefault.jpg'
     }]
 }
+
+export const mockBoost: BoostAbility[] = [
+    {
+        title: 'Multitap',
+        description: 'Увеличивает количество монет, которое вы можете заработать за 1 тап по экрану',
+        imageUrl: '/src/assets/multitap-boost.svg',
+        price: 12000,
+        level: 12,
+    }, {
+        title: 'Energy limit',
+        description: 'Увеличивает количество энергии',
+        imageUrl: '/src/assets/energy-boost.svg',
+        price: 12000,
+        level: 12,
+    }
+]

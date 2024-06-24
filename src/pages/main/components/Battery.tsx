@@ -1,5 +1,5 @@
 import React, {FC, useState} from "react";
-import {Box, FormControlLabel, Stack, styled, Switch, SwitchProps, Typography} from "@mui/material";
+import {Box, FormControlLabel, Stack, styled, Switch, Typography} from "@mui/material";
 import ZipperIcon from '../../../assets/zipper.svg?react'
 import {mockUser} from '../../../mock/mock-data.ts'
 import './battery.scss'
@@ -51,7 +51,7 @@ const AntSwitch = styled(Switch)(({theme}) => ({
     },
 }));
 const Battery: FC<Props> = () => {
-    const [level, setLevel] = useState<number>(mockUser.energyPercent)
+    const [level] = useState<number>(mockUser.energyPercent)
     const [checked, setChecked] = React.useState(mockUser.isAutoRenew);
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

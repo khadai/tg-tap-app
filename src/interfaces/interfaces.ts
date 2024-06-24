@@ -9,6 +9,14 @@ export interface User {
 }
 
 export interface Video {
-    url:string;
-    image:string;
+    url: string;
+    image: string;
+}
+
+export interface BoostAbility {
+    imageUrl: string;
+    title: string;
+    price: number;
+    level: number;
+    description: string;
 }

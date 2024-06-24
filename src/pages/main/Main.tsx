@@ -1,10 +1,9 @@
-import React, {FC, useState} from "react";
-import {Typography, Box, Stack, Avatar, ButtonBase} from "@mui/material";
+import  {FC, useState} from "react";
+import {Avatar, Box, ButtonBase, Stack, Typography} from "@mui/material";
 import AchivIcon from '../../assets/robot.svg?react'
 import DollarIcon from '../../assets/dollar.svg?react'
 import {mockUser} from '../../mock/mock-data.ts'
 import {User} from "../../interfaces/interfaces.ts";
-import {NumericFormat} from 'react-number-format';
 import './main.scss'
 import Battery from "./components/Battery.tsx";
 import VideoBlock from "./components/VideoBlock.tsx";
@@ -15,7 +14,7 @@ interface Props {
 }
 
 const Main: FC<Props> = () => {
-    const [user, setUser] = useState<User>(mockUser)
+    const [user] = useState<User>(mockUser)
     const [isAnimating, setIsAnimating] = useState(false);
 
     const handleClick = () => {

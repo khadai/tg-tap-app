@@ -16,7 +16,6 @@ interface Props {
 const Navigation: FC<Props> = () => {
     const [value, setValue] = React.useState(2);
     const {pathname} = useLocation()
-    console.log(value, pathname)
 
     return (
         <Box>
@@ -26,7 +25,8 @@ const Navigation: FC<Props> = () => {
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 height: "200px",
-                width: '100%'
+                width: '100%',
+                zIndex:'0'
             }}>
             </Box>
             <Box sx={{
@@ -37,10 +37,10 @@ const Navigation: FC<Props> = () => {
                     <BottomNavigation
                         showLabels
                         value={value}
-                        onChange={(event, newValue) => {
+                        onChange={(_, newValue) => {
                             setValue(newValue);
                         }}
-                        sx={{backgroundColor: 'none', height: '80px', fontSize: '8px',  fontWeight:600}}
+                        sx={{backgroundColor: 'none', height: '80px', fontSize: '8px', fontWeight: 600}}
 
                     >
                         <BottomNavigationAction
@@ -64,9 +64,9 @@ const Navigation: FC<Props> = () => {
                             sx={{
                                 color: pathname === '/' ? 'white !important' : '#004037',
                                 fontSize: '64px',
-                                height: '154px',
-                                marginBottom: '100px',
-                                bottom: 40
+                                height: '94px',
+                                // marginBottom: '100px',
+                                bottom: 20
                             }}
                         />
                         <BottomNavigationAction
@@ -89,7 +89,7 @@ const Navigation: FC<Props> = () => {
             </Box>
 
         </Box>
-    )
-}
+    );
+};
 
 export default Navigation;

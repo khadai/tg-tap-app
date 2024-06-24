@@ -1,6 +1,6 @@
 import './App.css'
 import Navigation from "./components/navigation/Navigation.tsx";
-import {Routes, Route} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Main from "./pages/main/Main.tsx";
 import Boost from "./pages/boost/Boost.tsx";
 import Achievements from "./pages/achivements/Achievements.tsx";
