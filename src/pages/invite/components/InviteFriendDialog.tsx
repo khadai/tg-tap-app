@@ -7,15 +7,15 @@ import SendInvite from '../../../assets/send-invite.svg?react';
 
 export interface SimpleDialogProps {
     open: boolean;
-    onClose: (value: string) => void;
+    onClose: () => void;
     // data: BoostAbility;
 }
 
 export default function InviteFriendDialog(props: SimpleDialogProps) {
-    const {onClose, selectedValue, open, data} = props;
+    const {onClose, open} = props;
 
     const handleClose = () => {
-        onClose(selectedValue);
+        onClose();
     };
     const handleCopy = async () => {
         try {

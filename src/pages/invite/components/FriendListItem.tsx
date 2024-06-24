@@ -1,8 +1,7 @@
 import {FC} from "react";
 import {containerStyle} from "../../../styles/styles.ts";
 import {Avatar, Box, Typography} from "@mui/material";
-import giftImg from '../../../assets/gift.png'
-import {Friend, InviteOffer} from "../../../interfaces/interfaces.ts";
+import {Friend} from "../../../interfaces/interfaces.ts";
 import {NumericFormat} from "react-number-format";
 import DollarIcon from '../../../assets/dollar.svg?react'
 import RobotIcon from '../../../assets/robot.svg?react'
@@ -12,7 +11,7 @@ interface Props {
 }
 
 const FriendListItem: FC<Props> = ({friend}) => {
-    const {id, award, username, profilePhotoUrl} = friend;
+    const { award, username, profilePhotoUrl} = friend;
 
     return (
         <Box

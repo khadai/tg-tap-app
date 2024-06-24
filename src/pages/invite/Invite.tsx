@@ -1,13 +1,11 @@
-import React, {FC, useState} from "react";
+import  {FC, useState} from "react";
 import {Box, Button, Typography} from "@mui/material";
 import OfferListItem from "./components/OfferListItem.tsx";
 import {friendsMock} from "../../mock/mock-data.ts";
 import FriendListItem from "./components/FriendListItem.tsx";
 import InviteIcon from '../../assets/invite.svg?react';
 import CopyIcon from '../../assets/copy.svg?react';
-import BoostDialog from "../boost/components/BoostDialog.tsx";
 import InviteFriendDialog from "./components/InviteFriendDialog.tsx";
-import {BoostAbility} from "../../interfaces/interfaces.ts";
 
 interface Props {
 

@@ -26,13 +26,12 @@ const Navigation: FC<Props> = () => {
                 backgroundSize: "cover",
                 height: "200px",
                 width: '100%',
-                zIndex:'0'
+                zIndex: '0'
             }}>
             </Box>
             <Box sx={{
-                position: 'fixed', bottom: 0, left: 0, right: 0,
-            }}
-                 elevation={3}>
+                position: 'fixed', bottom: 0, left: 0, right: 0
+            }}>
                 <Box>
                     <BottomNavigation
                         showLabels

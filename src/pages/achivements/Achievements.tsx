@@ -1,10 +1,9 @@
-import React, {FC, useState} from "react";
-import {Typography, Box, Button} from "@mui/material";
+import  {FC, useState} from "react";
+import {Box, Button, Typography} from "@mui/material";
 import {containerStyle} from "../../styles/styles.ts";
 import {dailyAwardMock} from "../../mock/mock-data.ts";
 import CheckIcon from '../../assets/check.svg?react';
 import DailyCheckIcon from '../../assets/daily-check.svg?react';
-import InviteFriendDialog from "../invite/components/InviteFriendDialog.tsx";
 import AchivementsDialog from "./components/AchivementsDialog.tsx";
 import CountDown from "./components/CountDown.tsx";
 
@@ -50,7 +49,7 @@ const Achievements: FC<Props> = () => {
                 </Box>
                 <Box display='flex' justifyContent='space-between' alignItems='center' pt={2}>
                     <Box display='flex' gap='6px'>
-                        {days.map((day, index) => Day(index + 1 <= dailyStreak, index))}
+                        {days.map((_, index) => Day(index + 1 <= dailyStreak, index))}
                     </Box>
                     <Button variant='contained' size='small' sx={{height: '27px'}} disabled={!isAvailable}
                             onClick={() => setSelectedBoost(true)}>

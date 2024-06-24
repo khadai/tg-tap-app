@@ -11,7 +11,7 @@ interface Props {
 }
 
 const OfferListItem: FC<Props> = ({offer}) => {
-    const {title, award, description} = offer;
+    const {title, award} = offer;
 
     return (
         <Box sx={{

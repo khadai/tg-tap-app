@@ -5,16 +5,16 @@ import {containerStyle} from "../../../styles/styles.ts";
 
 export interface SimpleDialogProps {
     open: boolean;
-    onClose: (value: string) => void;
+    onClose: () => void;
     data: BoostAbility;
 }
 
 export default function BoostDialog(props: SimpleDialogProps) {
-    const {onClose, selectedValue, open, data} = props;
+    const {onClose, open, data} = props;
     const {imageUrl, title, price, description, level} = data
 
     const handleClose = () => {
-        onClose(selectedValue);
+        onClose();
     };
 
 
